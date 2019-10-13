@@ -91,8 +91,8 @@
            }
            public String get_animal()
            {
-               int randAnimal=r.nextInt(animal.length)+1;
-               return animal[randAnimal];
+               int randAnimal=r.nextInt(animals.length)+1;
+               return animals[randAnimal];
            }
 
                public void reRoll() //need to also find a random value thats assigned to a catagory of the users preffered catagories arraylist?

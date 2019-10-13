@@ -121,7 +121,7 @@
                    ArrayList <String> categories = new ArrayList<String>();
                    for(int i=0;i<categories.size();i++)
                    {
-                       arraylist(input)=input.nextLine(); //this will cause an error... try/catch?
+                       categories(input)=input.nextLine(); //this will cause an error... try/catch?
                    }
                    
                    int index=0;

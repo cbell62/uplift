@@ -118,8 +118,8 @@
                //then you can make a another random to find which catagory to use
                public void readInput()
                {
-                   ArrayList <String> arraylist = new ArrayList<String>();
-                   for(int i=0;i<arraylist.size();i++)
+                   ArrayList <String> categories = new ArrayList<String>();
+                   for(int i=0;i<categories.size();i++)
                    {
                        arraylist(input)=input.nextLine(); //this will cause an error... try/catch?
                    }
@@ -127,82 +127,82 @@
                    int index=0;
                    
                    //this code requires the user to select the catagories in this order, or they wont be considered
-               if(arraylist(index)==outdoors)
+               if(categories(index)==outdoors)
                        {
                            this.get_outdoors();
                            index++;
                        }
-               if(arraylist(index)==indoors)
+               if(categories(index)==indoors)
                        {
                            this.get_indoors();
                            index++;
                        }
-               if(arraylist(index)==creating)
+               if(categories(index)==creating)
                        {
                            this.get_creating();
                            index++;
                        }
-               if(arraylist(index)==sound)
+               if(categories(index)==sound)
                        {
                            this.get_sound();
                            index++;
                        }
-               if(arraylist(index)==sight)
+               if(categories(index)==sight)
                        {
                            this.get_sight();
                            index++;
                        }
-               if(arraylist(index)==feel)
+               if(categories(index)==feel)
                        {
                            this.get_feel();
                            index++;
                        }
-               if(arraylist(index)==memory)
+               if(categories(index)==memory)
                        {
                            this.get_memory();
                            index++;
                        }
-               if(arraylist(index)==productivity)
+               if(categories(index)==productivity)
                        {
                            this.get_productivity();
                            index++;
                        }
-               if(arraylist(index)==consumption)
+               if(categories(index)==consumption)
                        {
                            this.get_consumption();
                            index++;
                        }
-               if(arraylisty(index)==personal_time)
+               if(categories(index)==personal_time)
                        {
                            this.get_personal_time();
                            index++;
                        }
-               if(arraylist(index)==socializing)
+               if(categories(index)==socializing)
                        {
                            this.get_socializing();
                            index++;
                        }
-               if(arraylist(index)==small_activities)
+               if(categories(index)==small_activities)
                        {
                            this.get_small_activities();
                            index++;
                        }
-               if(arraylist(index)==sexual)
+               if(categories(index)==sexual)
                {
                    this.get_sexual();
                    index++;
                }
-               if(arraylist(index)==online)
+               if(categories(index)==online)
                {
                    this.get_online();
                    index++;
                }
-               if(arraylist(index)==leaving_comfort_zone)
+               if(categories(index)==leaving_comfort_zone)
                {
                    this.get_leaving_comfort_zone();
                    index++;
                }
-               if(arraylist(index)==animal)
+               if(categories(index)==animal)
                {
                    this.get_animal();
                    index++;

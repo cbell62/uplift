@@ -127,82 +127,82 @@
                    int index=0;
                    
                    //this code requires the user to select the catagories in this order, or they wont be considered
-               if(arraylist(index)=outdoors)
+               if(arraylist(index)==outdoors)
                        {
                            this.get_outdoors();
                            index++;
                        }
-               if(arraylist(index)=indoors)
+               if(arraylist(index)==indoors)
                        {
                            this.get_indoors();
                            index++;
                        }
-               if(arraylist(index)=creating)
+               if(arraylist(index)==creating)
                        {
                            this.get_creating();
                            index++;
                        }
-               if(arraylist(index)=sound)
+               if(arraylist(index)==sound)
                        {
                            this.get_sound();
                            index++;
                        }
-               if(arraylist(index)=sight)
+               if(arraylist(index)==sight)
                        {
                            this.get_sight();
                            index++;
                        }
-               if(arraylist(index)=feel)
+               if(arraylist(index)==feel)
                        {
                            this.get_feel();
                            index++;
                        }
-               if(arraylist(index)=memory)
+               if(arraylist(index)==memory)
                        {
                            this.get_memory();
                            index++;
                        }
-               if(arraylist(index)=productivity)
+               if(arraylist(index)==productivity)
                        {
                            this.get_productivity();
                            index++;
                        }
-               if(arraylist(index)=consumption)
+               if(arraylist(index)==consumption)
                        {
                            this.get_consumption();
                            index++;
                        }
-               if(arraylisty(index)=personal_time)
+               if(arraylisty(index)==personal_time)
                        {
                            this.get_personal_time();
                            index++;
                        }
-               if(arraylist(index)=socializing)
+               if(arraylist(index)==socializing)
                        {
                            this.get_socializing();
                            index++;
                        }
-               if(arraylist(index)=small_activities)
+               if(arraylist(index)==small_activities)
                        {
                            this.get_small_activities();
                            index++;
                        }
-               if(arraylist(index)=sexual)
+               if(arraylist(index)==sexual)
                {
                    this.get_sexual();
                    index++;
                }
-               if(arraylist(index)=online)
+               if(arraylist(index)==online)
                {
                    this.get_online();
                    index++;
                }
-               if(arraylist(index)=leaving_comfort_zone)
+               if(arraylist(index)==leaving_comfort_zone)
                {
                    this.get_leaving_comfort_zone();
                    index++;
                }
-               if(arraylist(index)=animal)
+               if(arraylist(index)==animal)
                {
                    this.get_animal();
                    index++;

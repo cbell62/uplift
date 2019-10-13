@@ -1,6 +1,6 @@
-    import java.util.Random;
-           public class Buttons extends Data {
-               public Buttons()
+ import java.util.Random;
+           public class Button extends Data {
+               public Button()
                {
                }
                //program reroll
@@ -91,8 +91,8 @@
            }
            public String get_animal()
            {
-               int randAnimal=r.nextInt(animals.length)+1;
-               return animals[randAnimal];
+               int randAnimal=r.nextInt(animal.length)+1;
+               return animal[randAnimal];
            }
 
                public void reRoll() //need to also find a random value thats assigned to a catagory of the users preffered catagories arraylist?
@@ -125,87 +125,264 @@
                    }
                    
                    int index=0;
-                   
+                   boolean end=false; //turn to the other direction when writing whats in the array
+                   boolean end2=false; //you went back to start and are going down the array again for a max of 2 turns (3/9per turn min) 
                    //this code requires the user to select the catagories in this order, or they wont be considered
                if(categories(index)==outdoors)
                        {
                            this.get_outdoors();
-                           index++;
-                       }
+                           if(index<categories.size())
+                           {
+                              index++;
+                           }
+                           else
+                           {
+                               end=true;
+                               if(index==0)
+                               {
+                                   index++;
+                               }
+                           }
+                           }
                if(categories(index)==indoors)
                        {
                            this.get_indoors();
-                           index++;
+                           if(index<categories.size())
+                           {
+                              index++;
+                           }
+                           else
+                           {
+                               end=true;
+                               if(index==0)
+                               {
+                                   index++;
+                               }
+                           }
                        }
                if(categories(index)==creating)
                        {
                            this.get_creating();
-                           index++;
+                           if(index<categories.size())
+                           {
+                              index++;
+                           }
+                           else
+                           {
+                               end=true;
+                               if(index==0)
+                               {
+                                   index++;
+                               }
+                           }
                        }
                if(categories(index)==sound)
                        {
                            this.get_sound();
-                           index++;
+                           if(index<categories.size())
+                           {
+                              index++;
+                           }
+                           else
+                           {
+                               end=true;
+                               if(index==0)
+                               {
+                                   index++;
+                               }
+                           }
                        }
                if(categories(index)==sight)
                        {
                            this.get_sight();
-                           index++;
+                            if(index<categories.size())
+                           {
+                              index++;
+                           }
+                           else
+                           {
+                               end=true;
+                               if(index==0)
+                               {
+                                   index++;
+                               }
+                           }
                        }
                if(categories(index)==feel)
                        {
                            this.get_feel();
-                           index++;
+                           if(index<categories.size())
+                           {
+                              index++;
+                           }
+                           else
+                           {
+                               end=true;
+                               if(index==0)
+                               {
+                                   index++;
+                               }
+                           }
                        }
                if(categories(index)==memory)
                        {
                            this.get_memory();
-                           index++;
+                           if(index<categories.size())
+                           {
+                              index++;
+                           }
+                           else
+                           {
+                               end=true;
+                               if(index==0)
+                               {
+                                   index++;
+                               }
+                           }
                        }
                if(categories(index)==productivity)
                        {
                            this.get_productivity();
-                           index++;
+                           if(index<categories.size())
+                           {
+                              index++;
+                           }
+                           else
+                           {
+                               end=true;
+                               if(index==0)
+                               {
+                                   index++;
+                               }
+                           }
                        }
                if(categories(index)==consumption)
                        {
                            this.get_consumption();
-                           index++;
+                           if(index<categories.size())
+                           {
+                              index++;
+                           }
+                           else
+                           {
+                               end=true;
+                               if(index==0)
+                               {
+                                   index++;
+                               }
+                           }
                        }
                if(categories(index)==personal_time)
                        {
                            this.get_personal_time();
-                           index++;
+                           if(index<categories.size())
+                           {
+                              index++;
+                           }
+                           else
+                           {
+                               end=true;
+                               if(index==0)
+                               {
+                                   index++;
+                               }
+                           }
                        }
                if(categories(index)==socializing)
                        {
                            this.get_socializing();
-                           index++;
+                           if(index<categories.size())
+                           {
+                              index++;
+                           }
+                           else
+                           {
+                               end=true;
+                               if(index==0)
+                               {
+                                   index++;
+                               }
+                           }
                        }
                if(categories(index)==small_activities)
                        {
                            this.get_small_activities();
-                           index++;
+                            if(index<categories.size())
+                           {
+                              index++;
+                           }
+                           else
+                           {
+                               end=true;
+                               if(index==0)
+                               {
+                                   index++;
+                               }
+                           }
                        }
                if(categories(index)==sexual)
                {
                    this.get_sexual();
-                   index++;
+                   if(index<categories.size())
+                           {
+                              index++;
+                           }
+                           else
+                           {
+                               end=true;
+                               if(index==0)
+                               {
+                                   index++;
+                               }
+                           }
                }
                if(categories(index)==online)
                {
                    this.get_online();
-                   index++;
+                   if(index<categories.size())
+                           {
+                              index++;
+                           }
+                           else
+                           {
+                               end=true;
+                               if(index==0)
+                               {
+                                   index++;
+                               }
+                           }
                }
                if(categories(index)==leaving_comfort_zone)
                {
                    this.get_leaving_comfort_zone();
-                   index++;
+                   if(index<categories.size())
+                           {
+                              index++;
+                           }
+                           else
+                           {
+                               end=true;
+                               if(index==0)
+                               {
+                                   index++;
+                               }
+                           }
                }
                if(categories(index)==animal)
                {
                    this.get_animal();
-                   index++;
+                   if(index<categories.size())
+                           {
+                              index++;
+                           }
+                           else
+                           {
+                               end=true;
+                               if(index==0)
+                               {
+                                   index++;
+                               }
+                           }
                }
              }//end  of readInput
               
@@ -250,4 +427,4 @@
                    {
                        this.readInput();
                    } 
-               }
+}

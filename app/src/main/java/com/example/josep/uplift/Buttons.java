@@ -1,4 +1,4 @@
-        import java.util.Random;
+  import java.util.Random;
         public class Buttons extends Data {
             public Buttons()
             {
@@ -59,7 +59,7 @@
             int randConsumption=r.nextInt(consumption.length)+1;
             return consumption[randConsumption];
         }
-        public String get_personalTime()
+        public String get_personal_ime()
         {
             int randPersonalTime=r.nextInt(personal_time.length)+1;
             return personal_time[randPersonalTime];
@@ -107,54 +107,136 @@
              this.optionEight();
              this.optionNince();
             }
-            public String get_random_catorgory()
+            /*public String get_random_catorgory()
             {
-                int randCatagory=r.nextint();
-            }
+                int randCatagory=r.nextInt();
+            }*/
             //first 3 options can be values 4.0+ (if applicable)
             //next 3 options >can< be values 3.0+ (if applicable)
             //next 3 options >can< be values 2.0+ (if applicable)
             //i want to make an array with the catagories and what their value is (1-5)
             //then you can make a another random to find which catagory to use
-                public void optionOne()
-                {
-                    
-                    if(value<name>4)
+            public void readInput()
+            {
+            if(input=outdoors)
                     {
-                        this.get_<name>(); //calls the random activity from <name>
+                        this.get_outdoors();
                     }
+            if(input=al)
+                    {
+                        this.get_indoors();
+                    }
+            if(input=animal)
+                    {
+                        this.get_animal();
+                    }
+            if(input=animal)
+                    {
+                        this.get_animal();
+                    }
+            if(input=animal)
+                    {
+                        this.get_animal();
+                    }
+            if(input=indoors)
+                    {
+                        this.get_animal();
+                    }
+            if(input=creating)
+                    {
+                        this.get_creating();
+                    }
+            if(input=sound)
+                    {
+                        this.get_sound();
+                    }
+            if(input=sight)
+                    {
+                        this.get_sight();
+                    }
+            if(input=feel)
+                    {
+                        this.get_feel();
+            if(input=memory)
+                    {
+                        this.get_memory();
+                    }
+            if(input=productivity)
+                    {
+                        this.get_productivity();
+                    }
+            if(input=consumption)
+                    {
+                        this.get_consumption();
+                    }
+            if(input=personal_time)
+                    {
+                        this.get_();
+                    }
+            if(input=socializing)
+                    {
+                        this.get_socializing();
+                    }
+            if(input=small_activities)
+                    {
+                        this.get_small_activities();
+                    }
+            if(intput=sexual)
+            {
+                this.get_sexual();
+            }
+            if(intput=online)
+            {
+                this.get_online();
+            }
+            if(intput=leaving_comfort_zone)
+            {
+                this.get_leaving_comfort_zone();
+            }
+            if(intput=animal)
+            {
+                this.get_animal();
+            }
+            
+                    }
+            
+            }
+            
+            public void optionOne()
+                {
+                    this.readInput();
                 }
                 public void optionTwo()
                 {
-
+                    this.readInput();
                 }
                 public void optionThree()
                 {
-
+                    this.readInput();
                 }
                 public void optionFour()
                 {
-
+                    this.readInput();
                 }
                 public void optionFive()
                 {
-
+                    this.readInput();
                 }
                 public void optionSix()
                 {
-
+                    this.readInput();
                 }
                 public void optionSeven()
                 {
-
+                    this.readInput();
                 }
                 public void optionEight()
                 {
-
+                    this.readInput();
                 }
                 public void optionNince()
                 {
-
+                    this.readInput();
                 }
                 
             }

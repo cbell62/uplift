@@ -1,4 +1,6 @@
  import java.util.Random;
+ 
+ //ISSUES:: can't extend data, doesnt incoporate button tracking and the text isnt being imported into android studio's 9 options
            public class Button extends Data {
                public Button()
                {
@@ -95,18 +97,6 @@
                return animal[randAnimal];
            }
 
-               public void reRoll() //need to also find a random value thats assigned to a catagory of the users preffered catagories arraylist?
-               {
-                this.optionOne();
-                this.optionTwo();
-                this.optionThree();
-                this.optionFour();
-                this.optionFive();
-                this.optionSix();
-                this.optionSeven();
-                this.optionEight();
-                this.optionNince();
-               }
                /*public String get_random_catorgory()
                {
                    int randCatagory=r.nextInt();
@@ -118,12 +108,12 @@
                //then you can make a another random to find which catagory to use
                public void readInput()
                {
-                   ArrayList <String> categories = new ArrayList<String>();
-                   for(int i=0;i<categories.size();i++)
+                   ArrayList<String> categories = new ArrayList<String>();//users declared favorite categorie
+                   for(int i=0;i<4;i++) //still requires try/catch ,  categories.size()=0...this loop is to make it longer
                    {
-                       categories(input)=input.nextLine(); //this will cause an error... try/catch?
+                       input=input.nextLine(); //still requires input from another program
+                       categories.add(input); 
                    }
-                   
                    int index=0;
                    boolean end=false; //turn to the other direction when writing whats in the array
                    boolean end2=false; //you went back to start and are going down the array again for a max of 2 turns (3/9per turn min) 
@@ -386,7 +376,7 @@
                }
              }//end  of readInput
               
-           }
+           
     
             //all this does is fill the button with whatever is accesssed in the readInput method above, 
             //requires coding to actually let it be put into android studio
@@ -427,4 +417,16 @@
                    {
                        this.readInput();
                    } 
-}
+                public void reRoll() //need to also find a random value thats assigned to a catagory of the users preffered catagories arraylist?
+               {
+                this.optionOne();
+                this.optionTwo();
+                this.optionThree();
+                this.optionFour();
+                this.optionFive();
+                this.optionSix();
+                this.optionSeven();
+                this.optionEight();
+                this.optionNince();
+               }
+           }

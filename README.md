@@ -1,0 +1,6 @@
+- **Joseph Ahrendsen, Emily Abel, Callie Xu, and Calista Bell's Project for HackNC 2019 Hackathon**
+- ** Uplift is an Android Mobile Application that identifies activities in your day through the users daily inputs and gives them feedback according to which categories they selected and their passions/frequency. **
+- **It also gives weekly feedback in a collage-like-style with the more common activities being larger than activities done once a week, etc.**
+- **Built using Android Studio, NetBeans and GitHub in the java language.**
+- **Won Wolfram Award**
+- **Demo, Description, and More: [Uplift](https://devpost.com/software/uplift-f4hl0d)**
